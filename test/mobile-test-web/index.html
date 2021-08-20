@@ -114,7 +114,7 @@ const scanner = {
 
 	stop() {
 		this.procFrame = () => this._proc_stop();
-	}
+	},
 
 	_proc_try_capture() {
 		if (this.video.readyState === this.video.HAVE_ENOUGH_DATA) {
