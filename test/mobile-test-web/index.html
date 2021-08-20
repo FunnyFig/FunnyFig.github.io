@@ -137,7 +137,11 @@ const scanner = {
 				this.scanned_code.innerText = code.data;
 				this.stop();
 				// close modal
-				const event = new MouseEvent('click');
+				const event = new MouseEvent('click', {
+					view: window,
+					bubbles: true,
+					cancelable: false
+				});
 				document.querySelector('#stop_capture').dispatchEvent(event);
 			}
 		}
