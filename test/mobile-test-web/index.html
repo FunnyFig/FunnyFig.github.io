@@ -33,6 +33,9 @@
 <label>Google Play: </label><a href="market://details?id=com.android.chrome">google play chrome</a><br>
 <label>Google Play Publisher: </label><a href="market://search?q=pub:Google LLC&c=apps">google apps</a><br>
 <!-- https://developer.chrome.com/docs/multidevice/android/intents/ -->
+<!-- https://stackoverflow.com/questions/37069816/deep-linking-not-working-in-chrome -->
+<!-- This is a known wontfix bug in Chrome 40+ -->
+<!-- Our app available only -->
 <label>Android Intent: </label><a href="intent:#Intent;action=android.intent.action.SEND;type=text/plain;S.android.intent.extra.TEXT=Send%20Message%20by%20any%20any%20app;end">Send Message by any app</a><br>
 <label>Apple App Store: </label><a href="itms-apps://itunes.apple.com/app/id">app store</a><br>
 <!-- pdf download or view -->
@@ -41,6 +44,7 @@
 <!-- https://github.com/google/google-authenticator-android/issues/54 -->
 <label>OTP: </label><a href="otpauth://totp/TEST?secret=ACQOUA72D3YFA4E5UORXZTKHJ2XL3WIZ">otpauth</a><br>
 <label>App Version: </label><span id='app_version'>Unknown</span><br>
+<label>Wallet Connect: </label><a href="wc:594d7b04-b4e6-4f14-a559-7c5e951e9e1a@1?bridge=https%3A%2F%2Fbridge.walletconnect.org&amp;key=9ea9d07d41a59a1dbb69b2dd50e2c455f5faec2092543d471bc14638e6084125">Connect</a><br>
 
 <!--
 <button onclick="openCamera()">Turn on Camera</button><br>
